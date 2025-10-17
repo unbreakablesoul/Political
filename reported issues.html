@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reported Issues | Citizen Connect</title>
+  <link rel="stylesheet" href="reported issues.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      Citizen<span>Connect</span>
+    </div>
+    <ul class="menu">
+      <li><a href="dashboard.html">🏠 Dashboard</a></li>
+      <li class="active"><a href="reported-issues.html">📝 Reported Issues</a></li>
+      <li><a href="feedback.html">💬 Feedback</a></li>
+      <li><a href="political-updates.html">📢 Updates</a></li>
+  
+      <li><a href="login.html" class="logout">🚪 Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header>
+      <h2>Reported Issues</h2>
+      <p>Track the issues you and other citizens have submitted.</p>
+    </header>
+
+    <section class="report-section">
+      <div class="report-form">
+        <h3>Submit a New Issue</h3>
+        <form>
+          <label for="title">Issue Title</label>
+          <input type="text" id="title" placeholder="e.g., Street light not working" required>
+
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="road">Roads & Transport</option>
+            <option value="water">Water Supply</option>
+            <option value="waste">Waste Management</option>
+            <option value="electricity">Electricity</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" placeholder="Describe the issue briefly..." required></textarea>
+
+          <button type="button" class="btn">Submit Issue</button>
+        </form>
+      </div>
+
+      <div class="report-list">
+        <h3>Recent Issues</h3>
+
+        <div class="issue-card">
+          <h4>🚧 Potholes on Main Road</h4>
+          <p>Large potholes on the central road causing accidents during rain.</p>
+          <span class="status pending">Pending</span>
+        </div>
+
+        <div class="issue-card">
+          <h4>💡 Street Light Not Working</h4>
+          <p>The street light near Sector 12 park has been off for two weeks.</p>
+          <span class="status resolved">Resolved</span>
+        </div>
+
+        <div class="issue-card">
+          <h4>🚰 Water Leakage</h4>
+          <p>Water pipe leakage near the bus stop causing wastage of clean water.</p>
+          <span class="status reviewing">Under Review</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

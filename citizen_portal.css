@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+/* Header / Navbar */
+header {
+  background: #1a73e8;
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #00e5b5;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00e5b5;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1a73e8, #00bfa5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons .btn {
+  background: #fff;
+  color: #1a73e8;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  margin: 0 8px;
+}
+
+.hero-buttons .btn:hover {
+  background: #00bfa5;
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #1a73e8;
+}
+
+/* Abou*
